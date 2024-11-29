@@ -2,25 +2,25 @@ class RusticServer < Formula
   desc "rustic server - a REST server built in rust to use with rustic and restic.
 "
   homepage "https://rustic.cli.rs/"
-  version "0.4.3"
+  version "0.4.4"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/rustic-rs/rustic_server/releases/download/v0.4.3/rustic_server-aarch64-apple-darwin.tar.xz"
-      sha256 "4e6e7304e3c2b586d6d30c52f9cadefbeb26e39b4153684a23fc2280fe13b473"
+      url "https://github.com/rustic-rs/rustic_server/releases/download/v0.4.4/rustic_server-aarch64-apple-darwin.tar.xz"
+      sha256 "0ed1dd6cdc5f223cf223c31e648ddca296609cd81a02e376627326130293f51c"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/rustic-rs/rustic_server/releases/download/v0.4.3/rustic_server-x86_64-apple-darwin.tar.xz"
-      sha256 "5458e15726615a6e3b91a54d73c1e0760f8cebe414dafede27ba27f32efc891d"
+      url "https://github.com/rustic-rs/rustic_server/releases/download/v0.4.4/rustic_server-x86_64-apple-darwin.tar.xz"
+      sha256 "fc4cd2449e657cee0eec2d2bd95b8faf9255cee172ac2c837289b55b570fcaaf"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/rustic-rs/rustic_server/releases/download/v0.4.3/rustic_server-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "7e95af8a4eea3ac62ab31112db1600e2a82d1778d0c5186ab52434c1ad9cf632"
+      url "https://github.com/rustic-rs/rustic_server/releases/download/v0.4.4/rustic_server-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "e74a116673d36c788d274cc52d6fbb425dd65aba8874f7694d8090ed290c4deb"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/rustic-rs/rustic_server/releases/download/v0.4.3/rustic_server-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "82bbde5be80890f53677b70c4d6b64c5d7bbb8334f1443bf3a50f38ceb72fa79"
+      url "https://github.com/rustic-rs/rustic_server/releases/download/v0.4.4/rustic_server-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "a05188d43a3fcdc3719de8bada5f8665ac0c664e80ef1387d7690811a6829fb0"
     end
   end
   license "AGPL-3.0-or-later"
